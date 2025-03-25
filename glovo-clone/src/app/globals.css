@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 140 33% 97%;
+    --foreground: 120 14% 20%; /* Dark green text */
+
+    --card: 0 0% 100%;
+    --card-foreground: 120 14% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 120 14% 20%;
+
+    /* Primary - Vibrant Green */
+    --primary: 155 54% 28%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary - Olive Green */
+    --secondary: 82 36% 40%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Accent - Earth Brown */
+    --accent: 36 40% 40%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Highlight - Leaf Green */
+    --highlight: 120 50% 45%;
+    --highlight-foreground: 0 0% 100%;
+
+    /* Muted tones */
+    --muted: 142 10% 96%;
+    --muted-foreground: 142 10% 40%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 142 30% 90%;
+    --input: 142 30% 90%;
+    --ring: 155 54% 28%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 120 10% 10%;
+    --foreground: 0 0% 98%;
+
+    --card: 120 10% 10%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 120 10% 10%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 155 54% 28%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 82 36% 40%;
+    --secondary-foreground: 0 0% 100%;
+
+    --accent: 36 40% 40%;
+    --accent-foreground: 0 0% 100%;
+
+    --highlight: 120 50% 45%;
+    --highlight-foreground: 0 0% 100%;
+
+    --muted: 120 10% 20%;
+    --muted-foreground: 120 10% 70%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 120 10% 20%;
+    --input: 120 10% 20%;
+    --ring: 155 54% 28%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom classes for farm website */
+.farm-hero {
+  background: linear-gradient(to bottom, hsl(155, 54%, 28%), hsl(150, 50%, 35%));
+}
+
+.farm-secondary {
+  background: linear-gradient(to bottom, hsl(82, 36%, 40%), hsl(82, 36%, 50%));
+}
+
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.icon-image {
+  height: 80px;
+  width: 80px;
+  object-fit: contain;
+}
+
+/* Improve cart button animation */
+.cart-button {
+  transition: all 0.2s ease;
+}
+
+.cart-button:hover {
+  transform: scale(1.05);
+}
+
+.cart-button:active {
+  transform: scale(0.98);
+}
+
+/* Custom farm patterns */
+.farm-pattern {
+  background-color: rgba(21, 128, 61, 0.05);
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(21, 128, 61, 0.15) 1px, transparent 0);
+  background-size: 20px 20px;
+}
