@@ -108,15 +108,15 @@ export default function ProductList({ products, categoryName }: ProductListProps
     switch(categoryName) {
       case 'Andrew Poultry Farm':
         return 'bg-farm-green-600 hover:bg-farm-green-700';
-      case 'Kinunga Fresh Avocados':
+      case 'Kinunga Avocado Orchard':
         return 'bg-farm-green-600 hover:bg-farm-green-700';
-      case 'Dairy Products':
+      case 'JJ Sheep n Goat Farm':
         return 'bg-farm-olive-500 hover:bg-farm-olive-600';
-      case 'Organic Vegetables':
+      case 'Kilonito Kienyeji Vegetables and Fruits':
         return 'bg-farm-leaf-500 hover:bg-farm-leaf-600';
-      case 'Fruit Orchard':
+      case 'Lukenya Beef n Dairy':
         return 'bg-farm-olive-500 hover:bg-farm-olive-600';
-      case 'Honey Farm':
+      case 'Kite11 Maize Farm':
         return 'bg-farm-brown-500 hover:bg-farm-brown-600';
       default:
         return 'bg-farm-green-600 hover:bg-farm-green-700';
@@ -127,15 +127,15 @@ export default function ProductList({ products, categoryName }: ProductListProps
     switch(categoryName) {
       case 'Andrew Poultry Farm':
         return 'bg-farm-green-100 text-farm-green-800';
-      case 'Kinunga Fresh Avocados':
+      case 'Kinunga Avocado Orchard':
         return 'bg-farm-green-100 text-farm-green-800';
-      case 'Dairy Products':
+      case 'JJ Sheep n Goat Farm':
         return 'bg-farm-olive-100 text-farm-olive-800';
-      case 'Organic Vegetables':
+      case 'Kilonito Kienyeji Vegetables and Fruits':
         return 'bg-farm-leaf-100 text-farm-leaf-700';
-      case 'Fruit Orchard':
+      case 'Lukenya Beef n Dairy':
         return 'bg-farm-olive-100 text-farm-olive-800';
-      case 'Honey Farm':
+      case 'Kite11 Maize Farm':
         return 'bg-farm-brown-100 text-farm-brown-800';
       default:
         return 'bg-farm-green-100 text-farm-green-800';
@@ -325,16 +325,16 @@ function getCategoryIcon(categoryName: string) {
   switch(categoryName) {
     case 'Andrew Poultry Farm':
       return '🐔';
-    case 'Kinunga Fresh Avocados':
+    case 'Kinunga Avocado Orchard':
       return '🥑';
-    case 'Dairy Products':
-      return '🥛';
-    case 'Organic Vegetables':
-      return '🥬';
-    case 'Fruit Orchard':
-      return '🍎';
-    case 'Honey Farm':
-      return '🍯';
+    case 'JJ Sheep n Goat Farm':
+      return '🐐';
+    case 'Kilonito Kienyeji Vegetables and Fruits':
+      return '🫑';
+    case 'Lukenya Beef n Dairy':
+      return '🐄';
+    case 'Kite11 Maize Farm':
+      return '🌽';
     default:
       return '🌱';
   }
